@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="display_data.js"></script>
+    <script src="myscript.js"></script>
+    <title>Student Registration Form</title>
+    <style>
+        .container {
+            text-align: center;
+           
+            padding: 18px;
+            margin: 10% 25%;
+            font-size: 30px;
+        }
+        h2{
+            font-size:50px;
+        }
+        button{
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        input{
+            font-size: 20px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>User Details</h3>
+        <hr>
+        <form id="studentForm">
+            <div class="form-grp">
+                <label>Firstname:</label>
+                <input type="text" id="Firstname" class="form-control" required />
+            </div>
+            <div class="form-grp">
+                <label>Lastname:</label>
+                <input type="text" id="Lastname" class="form-control" required />
+            </div>
+            <div class="form-grp">
+                <label>Email:</label>
+                <input type="text" id="Email" class="form-control" required />
+            </div>
+            <div class="form-grp">
+                <label>Password:</label>
+                <input type="password" id="Password" class="form-control" required />
+            </div>
+            <br>
+            <button id="btnAddStudent" type="button" class="btn btn-primary ">Display</button><br><br>
+        </form>
+    </div>
+</body>
+
+</html>
